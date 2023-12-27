@@ -1,0 +1,92 @@
+
+/* Base reset for better cross-browser compatibility */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 70%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Add box-sizing to border-box for all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Set the background image */
+body {
+    background-image: url('bingo_background.jpg'); /* Path to the background image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background to avoid scrolling */
+}
+
+/* Styles for the app container */
+.app-container {
+    text-align: center; /* Align text to the left side */
+    padding: 1rem; /* Add some padding */
+    color: #333; /* Add color to text */
+}
+
+/* Header styles */
+header {
+    margin-top: 3rem; /* Add some space below the header */
+    font-size: 3em; /* Increase font size to make it much bigger */
+    color: #f5c505; /* Gold color for the main heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+    margin-bottom: 1rem; /* Add some space below the header */
+}
+
+/* Button styles */
+button {
+    padding: 0.5rem 1rem; /* Padding for buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white; /* White text color */
+    font-size: 2rem; /* Set font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Transition for effects */
+}
+
+button:hover {
+    background-color: #0b7711; /* Darker green on hover */
+}
+
+/* Responsive design for mobile devices */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #fafafa; /* Set a light background color */
+    }
+
+    .app-container {
+        padding: 0.3rem; /* Reduce padding on small screens */
+    }
+
+    header {
+        font-size: 2rem; /* Increase font size for better readability */
+    }
+
+    button {
+        font-size: 2rem; /* Increase button font size for easier interaction */
+    }
+}
+
+/* Additional styles for highlighted text such as 'Last Called', 'BINGO', and 'Numbers' */
+.highlighted-text {
+    color: #000000; /* Set the text color to blue */
+    font-size: 2em; /* Increase font size to make it much bigger */
+}
